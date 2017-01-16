@@ -651,5 +651,25 @@ namespace ArraysForNikita
 			}
 			return result;
 		}
+
+		static int getRandomNum(int min, int max)
+		{
+			return rand.Next(min, max + 1);
+		}
+
+		static bool isGreaterThanZero(int number)
+		{
+			if (number > 0)
+				return true;
+			else
+				return false;
+		}
+		static bool isGreaterThanZero(double number)
+		{
+			if (number > 0)
+				return true;
+			else
+				return false;
+		}
 	}
 }
